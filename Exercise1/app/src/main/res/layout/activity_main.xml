@@ -134,6 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toEndOf="@+id/textViewLoan"
         app:layout_constraintTop_toBottomOf="@+id/editTextInterestRate" />
 
@@ -143,7 +144,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toEndOf="@+id/textViewInterest"
         app:layout_constraintTop_toBottomOf="@+id/textCarLoan" />
 
@@ -151,9 +152,10 @@
         android:id="@+id/textMonthlyRepayment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.345"
         app:layout_constraintStart_toEndOf="@+id/textViewMonthlyRepayment"
         app:layout_constraintTop_toBottomOf="@+id/textInterest" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,14 +1,16 @@
 package com.example.exercise2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         buttonCalculate.setOnClickListener(){
             getAttributes()
@@ -24,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val weight = editTextWeight.text.toString().toDouble()
         val height = editTextHeight.text.toString().toDouble()/100
         compareBMI(calculateBMI(weight,height))
-        textViewBMI.text = calculateBMI(weight, height).toString()
+        textViewBMI.text = String.format("%.2f", calculateBMI(weight, height))
 
     }
     private fun  calculateBMI(weight:Double, height:Double):Double{
@@ -53,4 +55,5 @@ class MainActivity : AppCompatActivity() {
         imageViewProfile.setImageResource(R.drawable.empty)
         textViewBMI.text = ""
     }
+
 }

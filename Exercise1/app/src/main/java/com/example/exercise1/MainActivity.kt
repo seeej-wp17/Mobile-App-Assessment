@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
         val interest = loan * interestrate * peroid
         val monthlyrepayment = (loan + interest)/peroid/12
 
-        textCarLoan.text = loan.toString()
-        textInterest.text = interest.toString()
-        textMonthlyRepayment.text = monthlyrepayment.toString()
+        textCarLoan.text = "RM " + loan.toString()
+        textInterest.text = "RM " + interest.toString()
+        textMonthlyRepayment.text = "RM " + monthlyrepayment.toString()
     }
 
     public fun resetAll(){
